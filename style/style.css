@@ -1,0 +1,657 @@
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../lib/fonts/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../lib/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.social-icons {
+    background-color: black;
+
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 15px;
+}
+
+.social-icons #left1 {
+    float: right;
+}
+
+.social-icons a:hover {
+    background-color: #ccc;
+
+}
+
+.page-titt {
+    text-align: center;
+    padding: 60px 0px;
+    font-family: "oswald";
+}
+
+.page-titt h1 {
+    font-size: 3rem;
+}
+
+.page-titt p {
+    font-size: 1.5rem;
+}
+
+.page-titt p span {
+    background-color: black;
+    color: #eee;
+    padding: 0px 10px;
+}
+
+header {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header #all {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    color: #eee;
+    font-family: "Oswald";
+
+
+}
+
+header #all h2 {
+    font-size: 2.5rem;
+    line-height: 30px;
+    letter-spacing: 3px;
+
+}
+
+header #all h1 {
+    font-size: 4rem;
+    line-height: 50px;
+    letter-spacing: 5px;
+}
+
+header #all h6 button {
+    padding: 12px 22px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(138, 136, 136, 0.9)
+}
+
+header #all h6 button:hover {
+    background-color: #eee
+}
+
+header .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 60%;
+    max-width: 90%;
+    text-align: start;
+    position: relative;
+    z-index: 1001;
+    margin: 0 20px;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-size: 40px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.popup p {
+    color: #666;
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.popup input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.popup button {
+    background-color: #ff4a4a;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.popup button:hover {
+    background-color: #e03e3e;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+main{
+    padding: 20px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
+}
+
+main #leftside {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    
+}
+
+main #leftside article {
+    padding: 20px 30px;
+    background-color:#ffffff;
+    margin-bottom: 20px;
+}
+
+main #leftside article .par {
+    text-align: center;
+    font-family: "Oswald";
+    padding-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+main #leftside article .titt {
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: oswald;
+
+}
+
+main #leftside article .titt span {
+    color: silver;
+
+}
+
+main #leftside article .articlecontent{
+    font-family: "Open Sans";
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    
+}
+
+main #leftside article .articlecontent p{
+    margin-bottom: 5px;
+    line-height: 32px;
+    font-size: 1rem;
+}
+
+main #leftside article .butt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Open sans";
+    margin-bottom: 20px;
+}
+
+main #leftside article .butt .leftb {
+    
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    padding: 8px 13px;
+    font-weight: bold;
+}
+
+main #leftside article .butt .leftb:hover {
+    background-color: silver;
+    border: none;
+}
+
+main #leftside article .butt .rightb {
+   
+    background-color: black;
+    color: #eee;
+    padding: 8px 13px;
+    font-weight: bold;
+}
+
+main #leftside article .butt .rightb span {
+    background-color: #eee;
+    color: black;
+    padding: 0px 5px;
+}
+
+
+main #leftside article .butt .rightb:hover {
+    background-color: #ccc;
+    border: none;
+    color: black;
+
+}
+
+
+
+
+
+
+/* article comments */
+hr {
+    size: 1;
+    color: #cccccc;
+    opacity: 0.2;
+    margin-bottom: 20px;
+}
+
+.article-comments{
+    display: none;
+}
+.comment-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 20px;
+}
+
+.comment-img {
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+}
+
+.comment-img img {
+    width: 90px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-top: 15px;
+}
+
+.comment h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Oswald";
+}
+
+.comment-date {
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+.comment p {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "Open sans";
+}
+
+#rightside {
+    width: 30%;
+
+}
+
+
+
+.rightintro img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.rightintro h5 {
+    color: #fff;
+    font-size: 0.85rem;
+
+}
+
+ 
+
+#rightside{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.rightintro{
+    background-color: #000000;
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+
+ #rightside .rightintro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+    color: #ffffff ;
+}
+
+.rightintro-text h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: "Oswald";
+}
+ 
+
+.rightintro p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: left;
+    font-family: "Open sans";
+}
+
+
+main #rightside .rightsections{
+    margin: 20px 0px;
+    width: 100%;
+}
+main #rightside .rightsections h3 {
+    background-color:black ;
+    color: white;
+    padding: 20px;
+    font-family: "oswald";
+}
+main #rightside .rightsections .sectioncontent{
+    background-color: white;
+}
+
+.post{
+    list-style-type: none;
+    font-size: 1rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    font-family: "Open sans";
+    border-bottom: solid 0.5px #cccccc;
+
+}
+
+.post:hover {
+    background-color: #cccccc;
+}
+
+.postimg {
+    margin-right: 20px;
+}
+
+.postcontent {
+    padding-top: 5px;
+
+}
+
+.postname {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.ad-container{
+    padding: 20px;
+    background-color: #fff;
+}
+
+.ad{
+    background-color: #ccc;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.tags{
+    background-color:white;
+    padding: 20px;
+    
+}
+.tags p{
+    font-size: 0.9rem;
+    font-weight: 400 ;
+    line-height:2.3;
+    font-family: "Open sans";
+}
+
+.tags span{
+    background-color: #f1f1f1;
+    color: #000000;
+    padding: 3px 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.tags p #fas {
+    color: #fff;
+    background-color: black;
+    font-size: 1rem;
+}
+
+
+.inspiration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.inspiration .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.inspiration .row img{
+    padding: 10px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.icons{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.icons i{
+    font-size: 1.6rem;
+     margin-right: 10px;
+}
+
+.icons i:hover{
+    background-color: #8f8f8f;
+}
+
+.subscribe{
+    padding: 20px;
+    align-items: center;
+    background-color: #fff;
+    font-family: "Open sans";
+}
+
+.subscribe p{
+    margin-bottom: 30px;
+}
+
+.email{
+    min-width: 100%;
+    border: solid 0.5px #cccccc;
+    padding: 10px 5px;
+}
+
+.subscribe button{
+    width: 100%;
+    background-color: #F44336;
+    color: #ffffff;
+    border: none;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.subscribe button:hover{
+    background-color: #C6CCCE;
+    color: #000;
+}
+
+footer {
+    background-color: #616161;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: "Open sans";
+}
+
+.top{
+    color: white;
+     background-color: #000000;
+     padding: 15px 25px;
+     font-size: 1rem;
+     margin-bottom: 30px;
+     text-decoration: none;
+     cursor: pointer;
+}
+
+.top i {
+    margin-right: 10px;
+}
+
+.top:hover {
+    background-color: #cccccc;
+    color: #000000;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+footer p a {
+    color: #ffffff;
+}
+
+/* Media Queries */
+
+/* large screens */
+@media (max-width: 1200px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main #leftside{
+        width: 100%;
+        margin-right: 0;
+    }
+    main #rightside{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* iPads,Tablets */
+@media (max-width: 769px) {
+    header #all h2 {
+        font-size: 2.3rem;
+        line-height: 20px;
+
+    }
+
+    header #all h1 {
+        font-size: 2.7rem;
+        line-height: 35px;
+    }
+
+    header #all button {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* mobile phones */
+@media (max-width: 481px) {
+    nav {
+        display: none;
+    }
+
+    .page-titt p {
+        font-size: 1.3rem;
+    }
+   
+    header #all h2 {
+        font-size: 1.9rem;
+        line-height: 15px;
+
+    }
+
+    header #all h1 {
+        font-size: 2rem;
+        line-height: 20px;
+    }
+
+    header #all button {
+        font-size: 0.9rem;
+    }
+
+}
+
+
